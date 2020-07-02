@@ -61,6 +61,8 @@ Discarded input sections
                 0x0000000000000000        0x4 graphics_drawer.o
  .text._ZN5hwlib9uart_getcEv
                 0x0000000000000000        0x4 graphics_drawer.o
+ .text._ZN15graphics_drawerlsERN5hwlib8drawableE
+                0x0000000000000000       0x10 graphics_drawer.o
  .text._ZN15graphics_drawerlsER17updating_drawable
                 0x0000000000000000       0x16 graphics_drawer.o
  .bss._ZZN3due9now_ticksEvE4high
@@ -79,6 +81,55 @@ Discarded input sections
                 0x0000000000000000       0x70 graphics_drawer.o
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
                 0x0000000000000000       0xa4 graphics_drawer.o
+ .group         0x0000000000000000        0xc tetris_object_drawable.o
+ .text          0x0000000000000000        0x0 tetris_object_drawable.o
+ .data          0x0000000000000000        0x0 tetris_object_drawable.o
+ .bss           0x0000000000000000        0x0 tetris_object_drawable.o
+ .text._ZN22tetris_object_drawable19draw_implementationERN5hwlib6windowENS0_2xyENS0_5colorE
+                0x0000000000000000       0x6e tetris_object_drawable.o
+ .text._ZN22tetris_object_drawable4drawERN5hwlib6windowE
+                0x0000000000000000      0x110 tetris_object_drawable.o
+ .text._ZN6sam3xa10SystemInitEv
+                0x0000000000000000       0x7c tetris_object_drawable.o
+ .text._ZN3due8pin_infoENS_4pinsE
+                0x0000000000000000       0x20 tetris_object_drawable.o
+ .text._ZN3due11ad_pin_infoENS_7ad_pinsE
+                0x0000000000000000       0x1c tetris_object_drawable.o
+ .text._ZN3due11ad_seq_infoEm
+                0x0000000000000000       0x20 tetris_object_drawable.o
+ .text._ZN3due14port_registersEm
+                0x0000000000000000       0x54 tetris_object_drawable.o
+ .text._ZN3due12ticks_per_usEv
+                0x0000000000000000        0x6 tetris_object_drawable.o
+ .text._ZN3due9now_ticksEv
+                0x0000000000000000       0x80 tetris_object_drawable.o
+ .text._ZN5hwlib9uart_putcEc
+                0x0000000000000000        0x4 tetris_object_drawable.o
+ .text._ZN5hwlib19uart_char_availableEv
+                0x0000000000000000        0x4 tetris_object_drawable.o
+ .text._ZN5hwlib9uart_getcEv
+                0x0000000000000000        0x4 tetris_object_drawable.o
+ .bss._ZZN3due9now_ticksEvE4high
+                0x0000000000000000        0x8 tetris_object_drawable.o
+ .bss._ZZN3due9now_ticksEvE8last_low
+                0x0000000000000000        0x4 tetris_object_drawable.o
+ .bss._ZZN3due9now_ticksEvE9init_done
+                0x0000000000000000        0x1 tetris_object_drawable.o
+ .data._ZN6sam3xa15SystemCoreClockE
+                0x0000000000000000        0x4 tetris_object_drawable.o
+ .rodata._ZN3due8pin_infoENS_4pinsE.str1.1
+                0x0000000000000000       0x32 tetris_object_drawable.o
+ .rodata._ZN5hwlibL6purpleE
+                0x0000000000000000        0x4 tetris_object_drawable.o
+ .rodata._ZTV22tetris_object_drawable
+                0x0000000000000000       0x10 tetris_object_drawable.o
+ .rodata._ZZN3due11ad_pin_infoENS_7ad_pinsEE17ad_pin_info_array
+                0x0000000000000000        0xc tetris_object_drawable.o
+ .rodata._ZZN3due11ad_seq_infoEmE12ad_seq_array
+                0x0000000000000000       0x70 tetris_object_drawable.o
+ .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
+                0x0000000000000000       0xa4 tetris_object_drawable.o
+ .comment       0x0000000000000000       0x80 tetris_object_drawable.o
  .group         0x0000000000000000        0x8 hwlib.o
  .group         0x0000000000000000        0x8 hwlib.o
  .group         0x0000000000000000        0x8 hwlib.o
@@ -863,12 +914,16 @@ Discarded input sections
                 0x0000000000000000       0x18 hwlib.o
  .text._ZN5hwlib8mirror_yERKNS_5imageE
                 0x0000000000000000       0x18 hwlib.o
+ .text._ZN5hwlib6window5writeENS_2xyENS_5colorE
+                0x0000000000000000       0x5c hwlib.o
  .text._ZN5hwlib15window_invert_t20write_implementationENS_2xyENS_5colorE
                 0x0000000000000000       0x28 hwlib.o
  .text._ZN5hwlib13window_part_t20write_implementationENS_2xyENS_5colorE
                 0x0000000000000000       0x2e hwlib.o
  .text._ZN5hwlib6circle4drawERNS_6windowE
                 0x0000000000000000      0x174 hwlib.o
+ .text._ZN5hwlib4line4drawERNS_6windowE
+                0x0000000000000000       0xa2 hwlib.o
  .text._ZN5hwlib4partERNS_6windowENS_2xyES2_
                 0x0000000000000000       0x5c hwlib.o
  .text._ZN5hwlib6invertERNS_6windowE
@@ -1065,6 +1120,8 @@ Discarded input sections
                 0x0000000000000000        0xc hwlib.o
  .rodata._ZTVN5hwlib16image_mirror_y_tE
                 0x0000000000000000        0xc hwlib.o
+ .rodata._ZTVN5hwlib4lineE
+                0x0000000000000000        0xc hwlib.o
  .rodata._ZTVN5hwlib6circleE
                 0x0000000000000000        0xc hwlib.o
  .rodata._ZTVN5hwlib13window_part_tE
@@ -1131,13 +1188,11 @@ Discarded input sections
  .group         0x0000000000000000        0x8 main.o
  .group         0x0000000000000000        0x8 main.o
  .group         0x0000000000000000        0x8 main.o
- .group         0x0000000000000000        0x8 main.o
  .group         0x0000000000000000        0xc main.o
  .group         0x0000000000000000        0x8 main.o
  .group         0x0000000000000000        0xc main.o
  .group         0x0000000000000000        0xc main.o
  .group         0x0000000000000000        0x8 main.o
- .group         0x0000000000000000        0xc main.o
  .group         0x0000000000000000        0xc main.o
  .group         0x0000000000000000        0xc main.o
  .group         0x0000000000000000        0xc main.o
@@ -1150,8 +1205,6 @@ Discarded input sections
                 0x0000000000000000       0x28 main.o
  .text._ZN5hwlib20port_out_from_pins_t5flushEv
                 0x0000000000000000       0x20 main.o
- .text._ZN5hwlib4line4drawERNS_6windowE
-                0x0000000000000000      0x102 main.o
  .text._ZN5hwlib6window20clear_implementationENS_5colorE
                 0x0000000000000000       0x7c main.o
  .text._ZN5hwlib6window5clearENS_5colorE
@@ -1178,8 +1231,6 @@ Discarded input sections
                 0x0000000000000000        0x4 main.o
  .rodata._ZTVN5hwlib20port_out_from_pins_tE
                 0x0000000000000000       0x14 main.o
- .rodata._ZTVN5hwlib4lineE
-                0x0000000000000000        0xc main.o
  .bss._ZZN3due9now_ticksEvE4high
                 0x0000000000000000        0x8 main.o
  .bss._ZZN3due9now_ticksEvE8last_low
@@ -1234,6 +1285,7 @@ Linker script and memory map
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a
 LOAD matrix.o
 LOAD graphics_drawer.o
+LOAD tetris_object_drawable.o
 LOAD hwlib.o
 LOAD main.o
 LOAD bmptk_cortex.o
@@ -1255,7 +1307,7 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb
                 [!provide]                        PROVIDE (__ram_size = __ram_size)
                 [!provide]                        PROVIDE (__ram_end = __ram_end)
 
-.text           0x0000000000000000      0xd4c
+.text           0x0000000000000000      0xc04
                 0x0000000000000000                . = ALIGN (0x4)
                 0x0000000000000000                __text_start = .
                 [!provide]                        PROVIDE (__text_start = __text_start)
@@ -1305,153 +1357,140 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb
  .text._ZN15graphics_drawer10update_allEv
                 0x000000000000042e       0x22 graphics_drawer.o
                 0x000000000000042e                graphics_drawer::update_all()
- .text._ZN15graphics_drawerlsERN5hwlib8drawableE
-                0x0000000000000450       0x10 graphics_drawer.o
-                0x0000000000000450                graphics_drawer::operator<<(hwlib::drawable&)
  .text._ZN5hwlib15pin_out_dummy_t5writeEb
-                0x0000000000000460        0x2 hwlib.o
-                0x0000000000000460                hwlib::pin_out_dummy_t::write(bool)
+                0x0000000000000450        0x2 hwlib.o
+                0x0000000000000450                hwlib::pin_out_dummy_t::write(bool)
  .text._ZN5hwlib15pin_out_dummy_t5flushEv
-                0x0000000000000462        0x2 hwlib.o
-                0x0000000000000462                hwlib::pin_out_dummy_t::flush()
+                0x0000000000000452        0x2 hwlib.o
+                0x0000000000000452                hwlib::pin_out_dummy_t::flush()
  .text._ZN5hwlib20port_out_from_pins_t14number_of_pinsEv
-                0x0000000000000464        0x4 hwlib.o
-                0x0000000000000464                hwlib::port_out_from_pins_t::number_of_pins()
+                0x0000000000000454        0x4 hwlib.o
+                0x0000000000000454                hwlib::port_out_from_pins_t::number_of_pins()
  .text._ZN5hwlib20port_out_from_pins_t5writeEj
-                0x0000000000000468       0x28 hwlib.o
-                0x0000000000000468                hwlib::port_out_from_pins_t::write(unsigned int)
+                0x0000000000000458       0x28 hwlib.o
+                0x0000000000000458                hwlib::port_out_from_pins_t::write(unsigned int)
  .text._ZN5hwlib20port_out_from_pins_t5flushEv
-                0x0000000000000490       0x20 hwlib.o
-                0x0000000000000490                hwlib::port_out_from_pins_t::flush()
+                0x0000000000000480       0x20 hwlib.o
+                0x0000000000000480                hwlib::port_out_from_pins_t::flush()
  .text._ZN5hwlib5panicEPKcj
-                0x00000000000004b0        0x2 hwlib.o
-                0x00000000000004b0                hwlib::panic(char const*, unsigned int)
- *fill*         0x00000000000004b2        0x2 
+                0x00000000000004a0        0x2 hwlib.o
+                0x00000000000004a0                hwlib::panic(char const*, unsigned int)
+ *fill*         0x00000000000004a2        0x2 
  .text._ZN5hwlib10background18do_background_workEv
-                0x00000000000004b4       0x3c hwlib.o
-                0x00000000000004b4                hwlib::background::do_background_work()
+                0x00000000000004a4       0x3c hwlib.o
+                0x00000000000004a4                hwlib::background::do_background_work()
  .text._ZN5hwlib3allENS_2xyE
-                0x00000000000004f0       0x16 hwlib.o
-                0x00000000000004f0                hwlib::all(hwlib::xy)
- .text._ZN5hwlib6window5writeENS_2xyENS_5colorE
-                0x0000000000000506       0x5c hwlib.o
-                0x0000000000000506                hwlib::window::write(hwlib::xy, hwlib::color)
- .text._ZN5hwlib4line4drawERNS_6windowE
-                0x0000000000000562       0xa2 hwlib.o
-                0x0000000000000562                hwlib::line::draw(hwlib::window&)
+                0x00000000000004e0       0x16 hwlib.o
+                0x00000000000004e0                hwlib::all(hwlib::xy)
  .text._ZN5hwlib6now_usEv
-                0x0000000000000604       0x1c hwlib.o
-                0x0000000000000604                hwlib::now_us()
+                0x00000000000004f6       0x1c hwlib.o
+                0x00000000000004f6                hwlib::now_us()
  .text._ZN5hwlib7wait_usEi
-                0x0000000000000620       0x22 hwlib.o
-                0x0000000000000620                hwlib::wait_us(int)
+                0x0000000000000512       0x22 hwlib.o
+                0x0000000000000512                hwlib::wait_us(int)
  .text._ZN5hwlib7wait_msEi
-                0x0000000000000642       0x16 hwlib.o
-                0x0000000000000642                hwlib::wait_ms(int)
+                0x0000000000000534       0x16 hwlib.o
+                0x0000000000000534                hwlib::wait_ms(int)
  .text._ZN3due7pin_out5writeEb
-                0x0000000000000658        0xe main.o
-                0x0000000000000658                due::pin_out::write(bool)
+                0x000000000000054a        0xe main.o
+                0x000000000000054a                due::pin_out::write(bool)
  .text._ZN3due7pin_out5flushEv
-                0x0000000000000666        0x2 main.o
-                0x0000000000000666                due::pin_out::flush()
+                0x0000000000000558        0x2 main.o
+                0x0000000000000558                due::pin_out::flush()
  .text._ZN15matrix_pins_rgb14number_of_pinsEv
-                0x0000000000000668        0x4 main.o
-                0x0000000000000668                matrix_pins_rgb::number_of_pins()
+                0x000000000000055a        0x4 main.o
+                0x000000000000055a                matrix_pins_rgb::number_of_pins()
  .text._ZN15matrix_pins_rgb5writeEj
-                0x000000000000066c       0x2e main.o
-                0x000000000000066c                matrix_pins_rgb::write(unsigned int)
+                0x000000000000055e       0x2e main.o
+                0x000000000000055e                matrix_pins_rgb::write(unsigned int)
  .text._ZN15matrix_pins_rgb5flushEv
-                0x000000000000069a       0x20 main.o
-                0x000000000000069a                matrix_pins_rgb::flush()
- *fill*         0x00000000000006ba        0x2 
+                0x000000000000058c       0x20 main.o
+                0x000000000000058c                matrix_pins_rgb::flush()
  .text._ZN3due7pin_outC2ENS_4pinsE
-                0x00000000000006bc       0x34 main.o
-                0x00000000000006bc                due::pin_out::pin_out(due::pins)
-                0x00000000000006bc                due::pin_out::pin_out(due::pins)
+                0x00000000000005ac       0x34 main.o
+                0x00000000000005ac                due::pin_out::pin_out(due::pins)
+                0x00000000000005ac                due::pin_out::pin_out(due::pins)
  .text._ZN11matrix_partC2ER15matrix_pins_rgb
-                0x00000000000006f0       0x26 main.o
-                0x00000000000006f0                matrix_part::matrix_part(matrix_pins_rgb&)
-                0x00000000000006f0                matrix_part::matrix_part(matrix_pins_rgb&)
- *fill*         0x0000000000000716        0x2 
+                0x00000000000005e0       0x26 main.o
+                0x00000000000005e0                matrix_part::matrix_part(matrix_pins_rgb&)
+                0x00000000000005e0                matrix_part::matrix_part(matrix_pins_rgb&)
+ *fill*         0x0000000000000606        0x2 
  .text.startup.main
-                0x0000000000000718      0x1a0 main.o
-                0x0000000000000718                main
+                0x0000000000000608      0x174 main.o
+                0x0000000000000608                main
  .text.__startup
-                0x00000000000008b8       0x48 bmptk_cortex.o
-                0x00000000000008b8                __startup
- .text          0x0000000000000900       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_aeabi_uldivmod.o)
-                0x0000000000000900                __aeabi_uldivmod
- .text          0x0000000000000930      0x2d0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_udivmoddi4.o)
-                0x0000000000000930                __udivmoddi4
- .text          0x0000000000000c00        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_dvmd_tls.o)
-                0x0000000000000c00                __aeabi_ldiv0
-                0x0000000000000c04                . = ALIGN (0x4)
+                0x000000000000077c       0x48 bmptk_cortex.o
+                0x000000000000077c                __startup
+ .text          0x00000000000007c4       0x30 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_aeabi_uldivmod.o)
+                0x00000000000007c4                __aeabi_uldivmod
+ .text          0x00000000000007f4      0x2d0 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_udivmoddi4.o)
+                0x00000000000007f4                __udivmoddi4
+ .text          0x0000000000000ac4        0x4 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_dvmd_tls.o)
+                0x0000000000000ac4                __aeabi_ldiv0
+                0x0000000000000ac8                . = ALIGN (0x4)
  *(.glue_7t .glue_7)
- .glue_7        0x0000000000000c04        0x0 linker stubs
- .glue_7t       0x0000000000000c04        0x0 linker stubs
-                0x0000000000000c04                . = ALIGN (0x4)
+ .glue_7        0x0000000000000ac8        0x0 linker stubs
+ .glue_7t       0x0000000000000ac8        0x0 linker stubs
+                0x0000000000000ac8                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata._ZN3due8pin_infoENS_4pinsE.str1.1
-                0x0000000000000c04       0x32 matrix.o
- *fill*         0x0000000000000c36        0x2 
+                0x0000000000000ac8       0x32 matrix.o
+ *fill*         0x0000000000000afa        0x2 
  .rodata._ZTV6matrix
-                0x0000000000000c38       0x1c matrix.o
-                0x0000000000000c38                vtable for matrix
+                0x0000000000000afc       0x1c matrix.o
+                0x0000000000000afc                vtable for matrix
  .rodata._ZZN3due8pin_infoENS_4pinsEE14pin_info_array
-                0x0000000000000c54       0xa4 matrix.o
+                0x0000000000000b18       0xa4 matrix.o
  .rodata._ZTVN5hwlib15pin_out_dummy_tE
-                0x0000000000000cf8       0x10 hwlib.o
-                0x0000000000000cf8                vtable for hwlib::pin_out_dummy_t
+                0x0000000000000bbc       0x10 hwlib.o
+                0x0000000000000bbc                vtable for hwlib::pin_out_dummy_t
  .rodata._ZTVN5hwlib20port_out_from_pins_tE
-                0x0000000000000d08       0x14 hwlib.o
-                0x0000000000000d08                vtable for hwlib::port_out_from_pins_t
- .rodata._ZTVN5hwlib4lineE
-                0x0000000000000d1c        0xc hwlib.o
-                0x0000000000000d1c                vtable for hwlib::line
+                0x0000000000000bcc       0x14 hwlib.o
+                0x0000000000000bcc                vtable for hwlib::port_out_from_pins_t
  .rodata._ZTVN3due7pin_outE
-                0x0000000000000d28       0x10 main.o
-                0x0000000000000d28                vtable for due::pin_out
+                0x0000000000000be0       0x10 main.o
+                0x0000000000000be0                vtable for due::pin_out
  .rodata._ZTV15matrix_pins_rgb
-                0x0000000000000d38       0x14 main.o
-                0x0000000000000d38                vtable for matrix_pins_rgb
-                0x0000000000000d4c                . = ALIGN (0x4)
+                0x0000000000000bf0       0x14 main.o
+                0x0000000000000bf0                vtable for matrix_pins_rgb
+                0x0000000000000c04                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000000000d4c                . = ALIGN (0x4)
+                0x0000000000000c04                . = ALIGN (0x4)
  *(.gcc_except_table)
-                0x0000000000000d4c                . = ALIGN (0x4)
+                0x0000000000000c04                . = ALIGN (0x4)
  *(.eh_frame_hdr)
-                0x0000000000000d4c                . = ALIGN (0x4)
+                0x0000000000000c04                . = ALIGN (0x4)
  *(.eh_frame)
-                0x0000000000000d4c                . = ALIGN (0x4)
-                0x0000000000000d4c                __text_end = .
+                0x0000000000000c04                . = ALIGN (0x4)
+                0x0000000000000c04                __text_end = .
                 [!provide]                        PROVIDE (__text_end = __text_end)
 
-.vfp11_veneer   0x0000000000000d4c        0x0
- .vfp11_veneer  0x0000000000000d4c        0x0 linker stubs
+.vfp11_veneer   0x0000000000000c04        0x0
+ .vfp11_veneer  0x0000000000000c04        0x0 linker stubs
 
-.v4_bx          0x0000000000000d4c        0x0
- .v4_bx         0x0000000000000d4c        0x0 linker stubs
+.v4_bx          0x0000000000000c04        0x0
+ .v4_bx         0x0000000000000c04        0x0 linker stubs
 
-.iplt           0x0000000000000d4c        0x0
- .iplt          0x0000000000000d4c        0x0 matrix.o
+.iplt           0x0000000000000c04        0x0
+ .iplt          0x0000000000000c04        0x0 matrix.o
 
 .IF_YOU_SEE_THIS_YOU_HAVE_ONE_OR_MORE_GLOBAL_OBJECT_CONSTRUCTORS
  *(.init)
  *(.preinit_array)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array)
-                0x0000000000000d4c                . = ALIGN (0x4)
-                0x0000000000000d4c                __exidx_start = .
+                0x0000000000000c04                . = ALIGN (0x4)
+                0x0000000000000c04                __exidx_start = .
                 [!provide]                        PROVIDE (__exidx_start = __exidx_start)
 
-.ARM.exidx      0x0000000000000d4c        0x8
+.ARM.exidx      0x0000000000000c04        0x8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
- .ARM.exidx     0x0000000000000d4c        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_udivmoddi4.o)
+ .ARM.exidx     0x0000000000000c04        0x8 /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_udivmoddi4.o)
 
-.rel.dyn        0x0000000000000d54        0x0
- .rel.iplt      0x0000000000000d54        0x0 matrix.o
-                0x0000000000000d54                . = ALIGN (0x4)
-                0x0000000000000d54                __exidx_end = .
+.rel.dyn        0x0000000000000c0c        0x0
+ .rel.iplt      0x0000000000000c0c        0x0 matrix.o
+                0x0000000000000c0c                . = ALIGN (0x4)
+                0x0000000000000c0c                __exidx_end = .
                 [!provide]                        PROVIDE (__exidx_end = __exidx_end)
 
 .bss            0x0000000020000000    0x1201c
@@ -1496,9 +1535,9 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb
                 0x000000002001201c                __bss_end = .
                 [!provide]                        PROVIDE (__bss_end = __bss_end)
 
-.data           0x000000002001201c        0x8 load address 0x0000000000000d54
+.data           0x000000002001201c        0x8 load address 0x0000000000000c0c
                 0x000000002001201c                . = ALIGN (0x4)
-                0x0000000000000d54                __data_init_start = LOADADDR (.data)
+                0x0000000000000c0c                __data_init_start = LOADADDR (.data)
                 [!provide]                        PROVIDE (__data_init_start = __data_init_start)
                 0x000000002001201c                __data_start = .
                 [!provide]                        PROVIDE (__data_start = __data_start)
@@ -1513,13 +1552,13 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb
                 0x0000000020012024                . = ALIGN (0x4)
                 0x0000000020012024                __data_end = .
                 [!provide]                        PROVIDE (__data_end = __data_end)
-                0x0000000000000d54                __data_init_end = LOADADDR (.data)
+                0x0000000000000c0c                __data_init_end = LOADADDR (.data)
                 [!provide]                        PROVIDE (__data_init_end = __data_init_end)
                 [!provide]                        PROVIDE (__data_size = (__data_end - __data_start))
                 [!provide]                        PROVIDE (__data_init_size = __data_size)
                 [!provide]                        PROVIDE (__data_init_end = (__data_init_start + __data_init_size))
 
-.igot.plt       0x0000000020012024        0x0 load address 0x0000000000000d5c
+.igot.plt       0x0000000020012024        0x0 load address 0x0000000000000c14
  .igot.plt      0x0000000020012024        0x0 matrix.o
                 0x0000000020012024                . = ALIGN (0x4)
                 0x0000000020012024                __heap_start = .
@@ -1607,21 +1646,23 @@ LOAD /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/../../../../arm-none-eabi/lib/thumb
  .ARM.attributes
                 0x0000000000000033       0x33 graphics_drawer.o
  .ARM.attributes
-                0x0000000000000066       0x33 hwlib.o
+                0x0000000000000066       0x33 tetris_object_drawable.o
  .ARM.attributes
-                0x0000000000000099       0x33 main.o
+                0x0000000000000099       0x33 hwlib.o
  .ARM.attributes
-                0x00000000000000cc       0x33 bmptk_cortex.o
+                0x00000000000000cc       0x33 main.o
  .ARM.attributes
-                0x00000000000000ff       0x33 bmptk_heap_none.o
+                0x00000000000000ff       0x33 bmptk_cortex.o
  .ARM.attributes
-                0x0000000000000132       0x33 bmptk_fixed_size_stack.o
+                0x0000000000000132       0x33 bmptk_heap_none.o
  .ARM.attributes
-                0x0000000000000165       0x1d /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_aeabi_uldivmod.o)
+                0x0000000000000165       0x33 bmptk_fixed_size_stack.o
  .ARM.attributes
-                0x0000000000000182       0x2d /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_udivmoddi4.o)
+                0x0000000000000198       0x1d /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x00000000000001af       0x1d /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_dvmd_tls.o)
+                0x00000000000001b5       0x2d /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_udivmoddi4.o)
+ .ARM.attributes
+                0x00000000000001e2       0x1d /usr/bin/../lib/gcc/arm-none-eabi/7.3.1/thumb/v7-m/libgcc.a(_dvmd_tls.o)
 
 /DISCARD/
  *(.note.GNU-stack)

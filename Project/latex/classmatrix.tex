@@ -1,0 +1,120 @@
+\hypertarget{classmatrix}{}\section{matrix Class Reference}
+\label{classmatrix}\index{matrix@{matrix}}
+
+
+{\ttfamily \#include $<$matrix.\+hpp$>$}
+
+
+
+Inheritance diagram for matrix\+:
+% FIG 0
+
+
+Collaboration diagram for matrix\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmatrix_a5b188e2d48833305f8a1b6db34e40521}{matrix} (\hyperlink{classmatrix__port}{matrix\+\_\+port} \&\hyperlink{classmatrix_a41ef5702ec1ac3c3e23d6fe12ad58c57}{port}, hwlib\+::color fg=hwlib\+::white, hwlib\+::color bg=hwlib\+::black)
+\item 
+void \hyperlink{classmatrix_a2d1d88257855bff38c7359e183e26e43}{show\+\_\+frame} ()
+\item 
+void \hyperlink{classmatrix_a6d2edd1ca96668aed4dfa402fb558d8c}{loop} ()
+\item 
+virtual void \hyperlink{classmatrix_a867830c5b26171d0b031aadeb8ad1eee}{flush} ()
+\item 
+virtual void \hyperlink{classmatrix_a58f399a7e96f56100491d6d8ad235f68}{clear} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classmatrix_a81034d9b2d1b26438be9861e837a962b}{write\+\_\+implementation} (hwlib\+::xy l, hwlib\+::color c)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmatrix__port}{matrix\+\_\+port} \& \hyperlink{classmatrix_a41ef5702ec1ac3c3e23d6fe12ad58c57}{port}
+\item 
+\hyperlink{classmatrix__part}{matrix\+\_\+part} \hyperlink{classmatrix_ada4fc9c5734e5c7b27fe525bae27be7c}{top}
+\item 
+\hyperlink{classmatrix__part}{matrix\+\_\+part} \hyperlink{classmatrix_a8a571e0a29b41e59f71d851fa3dfc227}{bottom}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Boudewijn Witteveen 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+02/07/20 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmatrix_a5b188e2d48833305f8a1b6db34e40521}\label{classmatrix_a5b188e2d48833305f8a1b6db34e40521}} 
+\index{matrix@{matrix}!matrix@{matrix}}
+\index{matrix@{matrix}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{matrix()}{matrix()}}
+{\footnotesize\ttfamily matrix\+::matrix (\begin{DoxyParamCaption}\item[{\hyperlink{classmatrix__port}{matrix\+\_\+port} \&}]{port,  }\item[{hwlib\+::color}]{fg = {\ttfamily hwlib\+:\+:white},  }\item[{hwlib\+::color}]{bg = {\ttfamily hwlib\+:\+:black} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classmatrix_a58f399a7e96f56100491d6d8ad235f68}\label{classmatrix_a58f399a7e96f56100491d6d8ad235f68}} 
+\index{matrix@{matrix}!clear@{clear}}
+\index{clear@{clear}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void matrix\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classmatrix_a867830c5b26171d0b031aadeb8ad1eee}\label{classmatrix_a867830c5b26171d0b031aadeb8ad1eee}} 
+\index{matrix@{matrix}!flush@{flush}}
+\index{flush@{flush}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily virtual void matrix\+::flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classmatrix_a6d2edd1ca96668aed4dfa402fb558d8c}\label{classmatrix_a6d2edd1ca96668aed4dfa402fb558d8c}} 
+\index{matrix@{matrix}!loop@{loop}}
+\index{loop@{loop}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{loop()}{loop()}}
+{\footnotesize\ttfamily void matrix\+::loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmatrix_a2d1d88257855bff38c7359e183e26e43}\label{classmatrix_a2d1d88257855bff38c7359e183e26e43}} 
+\index{matrix@{matrix}!show\+\_\+frame@{show\+\_\+frame}}
+\index{show\+\_\+frame@{show\+\_\+frame}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{show\+\_\+frame()}{show\_frame()}}
+{\footnotesize\ttfamily void matrix\+::show\+\_\+frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classmatrix_a81034d9b2d1b26438be9861e837a962b}\label{classmatrix_a81034d9b2d1b26438be9861e837a962b}} 
+\index{matrix@{matrix}!write\+\_\+implementation@{write\+\_\+implementation}}
+\index{write\+\_\+implementation@{write\+\_\+implementation}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{write\+\_\+implementation()}{write\_implementation()}}
+{\footnotesize\ttfamily void matrix\+::write\+\_\+implementation (\begin{DoxyParamCaption}\item[{hwlib\+::xy}]{l,  }\item[{hwlib\+::color}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classmatrix_a8a571e0a29b41e59f71d851fa3dfc227}\label{classmatrix_a8a571e0a29b41e59f71d851fa3dfc227}} 
+\index{matrix@{matrix}!bottom@{bottom}}
+\index{bottom@{bottom}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{bottom}{bottom}}
+{\footnotesize\ttfamily \hyperlink{classmatrix__part}{matrix\+\_\+part} matrix\+::bottom\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmatrix_a41ef5702ec1ac3c3e23d6fe12ad58c57}\label{classmatrix_a41ef5702ec1ac3c3e23d6fe12ad58c57}} 
+\index{matrix@{matrix}!port@{port}}
+\index{port@{port}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily \hyperlink{classmatrix__port}{matrix\+\_\+port}\& matrix\+::port\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classmatrix_ada4fc9c5734e5c7b27fe525bae27be7c}\label{classmatrix_ada4fc9c5734e5c7b27fe525bae27be7c}} 
+\index{matrix@{matrix}!top@{top}}
+\index{top@{top}!matrix@{matrix}}
+\subsubsection{\texorpdfstring{top}{top}}
+{\footnotesize\ttfamily \hyperlink{classmatrix__part}{matrix\+\_\+part} matrix\+::top\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/\hyperlink{matrix_8hpp}{matrix.\+hpp}\item 
+library/\hyperlink{matrix_8cpp}{matrix.\+cpp}\end{DoxyCompactItemize}

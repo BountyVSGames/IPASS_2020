@@ -1,0 +1,33 @@
+digraph "main.cpp"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node0 [label="main.cpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node0 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="hwlib.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node0 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="library/matrix.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix_8hpp.html",tooltip="Inherits graphics_drawer. Manages the matrix. "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="graphics_drawer.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$graphics__drawer_8hpp.html",tooltip="Inherits hwlib::window. "];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="updating_drawable.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$updating__drawable_8hpp.html",tooltip="Inherits hwlib::drawable. Adds update function. "];
+  Node4 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="matrix_part.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__part_8hpp.html",tooltip="Writes pixel data to the matrix. "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="matrix_pins_rgb.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__pins__rgb_8hpp.html",tooltip="Inherits hwlib::port_out. Manages the rgb pins. "];
+  Node6 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="matrix_port.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__port_8hpp.html",tooltip="Contains all of the ports from the arduino that connect to the rgb matrix. "];
+  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="tetris_object_drawable.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$tetris__object__drawable_8hpp.html"];
+  Node8 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="enums.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$enums_8hpp.html"];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

@@ -1,0 +1,35 @@
+\hypertarget{enums_8hpp}{}\section{enums.\+hpp File Reference}
+\label{enums_8hpp}\index{enums.\+hpp@{enums.\+hpp}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}{tetris\+Types} \{ \hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a34be958a921e43d813a2075297d8e862}{tetris\+Types\+::box} = 0, 
+\hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a6438c669e0d0de98e6929c2cc0fac474}{tetris\+Types\+::line} = 1, 
+\hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a26d4d3e915c2fb3a22a3a41acb67ebd8}{tetris\+Types\+::piramide} = 2
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}\label{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}} 
+\index{enums.\+hpp@{enums.\+hpp}!tetris\+Types@{tetris\+Types}}
+\index{tetris\+Types@{tetris\+Types}!enums.\+hpp@{enums.\+hpp}}
+\subsubsection{\texorpdfstring{tetris\+Types}{tetrisTypes}}
+{\footnotesize\ttfamily enum \hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}{tetris\+Types}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{box@{box}!enums.\+hpp@{enums.\+hpp}}\index{enums.\+hpp@{enums.\+hpp}!box@{box}}}\mbox{\Hypertarget{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a34be958a921e43d813a2075297d8e862}\label{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a34be958a921e43d813a2075297d8e862}} 
+box&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{line@{line}!enums.\+hpp@{enums.\+hpp}}\index{enums.\+hpp@{enums.\+hpp}!line@{line}}}\mbox{\Hypertarget{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a6438c669e0d0de98e6929c2cc0fac474}\label{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a6438c669e0d0de98e6929c2cc0fac474}} 
+line&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{piramide@{piramide}!enums.\+hpp@{enums.\+hpp}}\index{enums.\+hpp@{enums.\+hpp}!piramide@{piramide}}}\mbox{\Hypertarget{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a26d4d3e915c2fb3a22a3a41acb67ebd8}\label{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787a26d4d3e915c2fb3a22a3a41acb67ebd8}} 
+piramide&\\
+\hline
+
+\end{DoxyEnumFields}

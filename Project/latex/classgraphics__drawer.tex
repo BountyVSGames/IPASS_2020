@@ -1,0 +1,111 @@
+\hypertarget{classgraphics__drawer}{}\section{graphics\+\_\+drawer Class Reference}
+\label{classgraphics__drawer}\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+
+
+{\ttfamily \#include $<$graphics\+\_\+drawer.\+hpp$>$}
+
+
+
+Inheritance diagram for graphics\+\_\+drawer\+:
+% FIG 0
+
+
+Collaboration diagram for graphics\+\_\+drawer\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classgraphics__drawer_a76168c68029e863f1ad09b5dc558719e}{graphics\+\_\+drawer} (hwlib\+::xy size, hwlib\+::color foreground, hwlib\+::color background)
+\begin{DoxyCompactList}\small\item\em hwlib\+::window with the ability to store drawable to draw continuously \end{DoxyCompactList}\item 
+void \hyperlink{classgraphics__drawer_a6c14eee0dd24900ba8aa924034b1bc60}{draw\+\_\+all} ()
+\item 
+void \hyperlink{classgraphics__drawer_ac85a6dc3e0ef97fc793f91862e794c47}{update\+\_\+all} ()
+\item 
+\hyperlink{classgraphics__drawer}{graphics\+\_\+drawer} \& \hyperlink{classgraphics__drawer_a44a2871ef32f5b9acccd7bac7d1137dd}{operator$<$$<$} (hwlib\+::drawable \&drawing)
+\item 
+\hyperlink{classgraphics__drawer}{graphics\+\_\+drawer} \& \hyperlink{classgraphics__drawer_a034d8e5bff49f5f18d17eb4d581712f2}{operator$<$$<$} (\hyperlink{classupdating__drawable}{updating\+\_\+drawable} \&drawing)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint\+\_\+fast16\+\_\+t \hyperlink{classgraphics__drawer_a432b568a14d6ce8b746dcce5901714dd}{drawings\+\_\+c} = 0
+\item 
+hwlib\+::drawable $\ast$ \hyperlink{classgraphics__drawer_ae6341a415f308d7d276d6c36336f2888}{drawings} \mbox{[}128\mbox{]}
+\item 
+uint\+\_\+fast16\+\_\+t \hyperlink{classgraphics__drawer_a2bdb91885928251f6c0d0c94593e2200}{updating\+\_\+drawings\+\_\+c} = 0
+\item 
+\hyperlink{classupdating__drawable}{updating\+\_\+drawable} $\ast$ \hyperlink{classgraphics__drawer_a596f6deb608444d694f8c97bf949d7e0}{updating\+\_\+drawings} \mbox{[}128\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classgraphics__drawer_a76168c68029e863f1ad09b5dc558719e}\label{classgraphics__drawer_a76168c68029e863f1ad09b5dc558719e}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{graphics\+\_\+drawer()}{graphics\_drawer()}}
+{\footnotesize\ttfamily graphics\+\_\+drawer\+::graphics\+\_\+drawer (\begin{DoxyParamCaption}\item[{hwlib\+::xy}]{size,  }\item[{hwlib\+::color}]{foreground,  }\item[{hwlib\+::color}]{background }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+hwlib\+::window with the ability to store drawable to draw continuously 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classgraphics__drawer_a6c14eee0dd24900ba8aa924034b1bc60}\label{classgraphics__drawer_a6c14eee0dd24900ba8aa924034b1bc60}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!draw\+\_\+all@{draw\+\_\+all}}
+\index{draw\+\_\+all@{draw\+\_\+all}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{draw\+\_\+all()}{draw\_all()}}
+{\footnotesize\ttfamily void graphics\+\_\+drawer\+::draw\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgraphics__drawer_a44a2871ef32f5b9acccd7bac7d1137dd}\label{classgraphics__drawer_a44a2871ef32f5b9acccd7bac7d1137dd}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \hyperlink{classgraphics__drawer}{graphics\+\_\+drawer} \& graphics\+\_\+drawer\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{hwlib\+::drawable \&}]{drawing }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgraphics__drawer_a034d8e5bff49f5f18d17eb4d581712f2}\label{classgraphics__drawer_a034d8e5bff49f5f18d17eb4d581712f2}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \hyperlink{classgraphics__drawer}{graphics\+\_\+drawer} \& graphics\+\_\+drawer\+::operator$<$$<$ (\begin{DoxyParamCaption}\item[{\hyperlink{classupdating__drawable}{updating\+\_\+drawable} \&}]{drawing }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classgraphics__drawer_ac85a6dc3e0ef97fc793f91862e794c47}\label{classgraphics__drawer_ac85a6dc3e0ef97fc793f91862e794c47}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!update\+\_\+all@{update\+\_\+all}}
+\index{update\+\_\+all@{update\+\_\+all}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{update\+\_\+all()}{update\_all()}}
+{\footnotesize\ttfamily void graphics\+\_\+drawer\+::update\+\_\+all (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classgraphics__drawer_ae6341a415f308d7d276d6c36336f2888}\label{classgraphics__drawer_ae6341a415f308d7d276d6c36336f2888}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!drawings@{drawings}}
+\index{drawings@{drawings}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{drawings}{drawings}}
+{\footnotesize\ttfamily hwlib\+::drawable$\ast$ graphics\+\_\+drawer\+::drawings\mbox{[}128\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgraphics__drawer_a432b568a14d6ce8b746dcce5901714dd}\label{classgraphics__drawer_a432b568a14d6ce8b746dcce5901714dd}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!drawings\+\_\+c@{drawings\+\_\+c}}
+\index{drawings\+\_\+c@{drawings\+\_\+c}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{drawings\+\_\+c}{drawings\_c}}
+{\footnotesize\ttfamily uint\+\_\+fast16\+\_\+t graphics\+\_\+drawer\+::drawings\+\_\+c = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgraphics__drawer_a596f6deb608444d694f8c97bf949d7e0}\label{classgraphics__drawer_a596f6deb608444d694f8c97bf949d7e0}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!updating\+\_\+drawings@{updating\+\_\+drawings}}
+\index{updating\+\_\+drawings@{updating\+\_\+drawings}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{updating\+\_\+drawings}{updating\_drawings}}
+{\footnotesize\ttfamily \hyperlink{classupdating__drawable}{updating\+\_\+drawable}$\ast$ graphics\+\_\+drawer\+::updating\+\_\+drawings\mbox{[}128\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classgraphics__drawer_a2bdb91885928251f6c0d0c94593e2200}\label{classgraphics__drawer_a2bdb91885928251f6c0d0c94593e2200}} 
+\index{graphics\+\_\+drawer@{graphics\+\_\+drawer}!updating\+\_\+drawings\+\_\+c@{updating\+\_\+drawings\+\_\+c}}
+\index{updating\+\_\+drawings\+\_\+c@{updating\+\_\+drawings\+\_\+c}!graphics\+\_\+drawer@{graphics\+\_\+drawer}}
+\subsubsection{\texorpdfstring{updating\+\_\+drawings\+\_\+c}{updating\_drawings\_c}}
+{\footnotesize\ttfamily uint\+\_\+fast16\+\_\+t graphics\+\_\+drawer\+::updating\+\_\+drawings\+\_\+c = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+library/\hyperlink{graphics__drawer_8hpp}{graphics\+\_\+drawer.\+hpp}\item 
+library/\hyperlink{graphics__drawer_8cpp}{graphics\+\_\+drawer.\+cpp}\end{DoxyCompactItemize}
