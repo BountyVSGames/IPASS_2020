@@ -5,12 +5,12 @@
 
 #include "tetris_object_drawable.hpp"
 
-void tetris_object_drawable::draw_implementation(hwlib::window& w, hwlib::xy pos, hwlib::color color)
+void tetrisObjectDrawable::draw_implementation(hwlib::window& w, hwlib::xy pos, hwlib::color color)
 {
     w.write(pos, color);
 }
 
-void tetris_object_drawable::draw(hwlib::window& w)
+void tetrisObjectDrawable::draw(hwlib::window& w)
 {
     switch(type)
     {
@@ -19,23 +19,42 @@ void tetris_object_drawable::draw(hwlib::window& w)
             {
                 for (int j = 0; j < 2; j++)
                 {
-                    draw_implementation(w, hwlib::xy((pos.x - i)  - offset.x, pos.y - j), hwlib::color(0xFFFF00));
+                    draw_implementation(w, hwlib::xy((pos.x - i), pos.y - j), hwlib::color(0xFFFF00));
                 }
             }
             break;
         case tetrisTypes::line:
             for (int i = 0; i < 4; i++)
             {
-                draw_implementation(w, hwlib::xy((pos.x - i) - offset.x, pos.y), hwlib::color(0x00FFFF));
+                draw_implementation(w, hwlib::xy((pos.x - i), pos.y), hwlib::color(0x00FFFF));
             }           
             break;
         case tetrisTypes::piramide:
             for (int i = 0; i < 3; i++)
             {
-                draw_implementation(w, hwlib::xy(pos.x  - offset.x, pos.y - i), hwlib::purple);
+                draw_implementation(w, hwlib::xy(pos.x, pos.y - i), hwlib::purple);
 
-                if(i == 1) draw_implementation(w, hwlib::xy((pos.x - 1)  - offset.x, pos.y - i), hwlib::purple);
+                if(i == 1) 
+                {
+                    draw_implementation(w, hwlib::xy(pos.x - 1, pos.y - i), hwlib::purple);
+                }
             }           
             break;
+    }
+}
+
+void tetrisObjectDrawable::update()
+{
+    if(pos.x < 31)
+    {
+        pos.x++;
+    }
+}
+
+void tetrisObjectDrawable::moveX(int posX)
+{
+    if((pos.y < 15 && posX > 0) || (pos.y > 1 && posX < 0))
+    {
+        pos.y += posX;
     }
 }

@@ -92,8 +92,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac85a6dc3e0ef97fc793f91862e794c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44a2871ef32f5b9acccd7bac7d1137dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphics__drawer.html">graphics_drawer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#a44a2871ef32f5b9acccd7bac7d1137dd">operator&lt;&lt;</a> (hwlib::drawable &amp;drawing)</td></tr>
 <tr class="separator:a44a2871ef32f5b9acccd7bac7d1137dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a034d8e5bff49f5f18d17eb4d581712f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphics__drawer.html">graphics_drawer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#a034d8e5bff49f5f18d17eb4d581712f2">operator&lt;&lt;</a> (<a class="el" href="classupdating__drawable.html">updating_drawable</a> &amp;drawing)</td></tr>
-<tr class="separator:a034d8e5bff49f5f18d17eb4d581712f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -101,10 +99,6 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a432b568a14d6ce8b746dcce5901714dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6341a415f308d7d276d6c36336f2888"><td class="memItemLeft" align="right" valign="top">hwlib::drawable *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#ae6341a415f308d7d276d6c36336f2888">drawings</a> [128]</td></tr>
 <tr class="separator:ae6341a415f308d7d276d6c36336f2888"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bdb91885928251f6c0d0c94593e2200"><td class="memItemLeft" align="right" valign="top">uint_fast16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#a2bdb91885928251f6c0d0c94593e2200">updating_drawings_c</a> = 0</td></tr>
-<tr class="separator:a2bdb91885928251f6c0d0c94593e2200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a596f6deb608444d694f8c97bf949d7e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classupdating__drawable.html">updating_drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#a596f6deb608444d694f8c97bf949d7e0">updating_drawings</a> [128]</td></tr>
-<tr class="separator:a596f6deb608444d694f8c97bf949d7e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a76168c68029e863f1ad09b5dc558719e"></a>
@@ -170,7 +164,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <a id="a44a2871ef32f5b9acccd7bac7d1137dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a44a2871ef32f5b9acccd7bac7d1137dd">&#9670;&nbsp;</a></span>operator<<() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a44a2871ef32f5b9acccd7bac7d1137dd">&#9670;&nbsp;</a></span>operator<<()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,24 +173,6 @@ Protected Attributes</h2></td></tr>
           <td class="memname"><a class="el" href="classgraphics__drawer.html">graphics_drawer</a> &amp; graphics_drawer::operator&lt;&lt; </td>
           <td>(</td>
           <td class="paramtype">hwlib::drawable &amp;&#160;</td>
-          <td class="paramname"><em>drawing</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a034d8e5bff49f5f18d17eb4d581712f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a034d8e5bff49f5f18d17eb4d581712f2">&#9670;&nbsp;</a></span>operator<<() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classgraphics__drawer.html">graphics_drawer</a> &amp; graphics_drawer::operator&lt;&lt; </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classupdating__drawable.html">updating_drawable</a> &amp;&#160;</td>
           <td class="paramname"><em>drawing</em></td><td>)</td>
           <td></td>
         </tr>
@@ -256,50 +232,6 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint_fast16_t graphics_drawer::drawings_c = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a596f6deb608444d694f8c97bf949d7e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a596f6deb608444d694f8c97bf949d7e0">&#9670;&nbsp;</a></span>updating_drawings</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classupdating__drawable.html">updating_drawable</a>* graphics_drawer::updating_drawings[128]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2bdb91885928251f6c0d0c94593e2200"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bdb91885928251f6c0d0c94593e2200">&#9670;&nbsp;</a></span>updating_drawings_c</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint_fast16_t graphics_drawer::updating_drawings_c = 0</td>
         </tr>
       </table>
   </td>

@@ -59,8 +59,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">main.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -68,6 +67,8 @@ $(function() {
 <div class="textblock"><code>#include &quot;hwlib.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="matrix_8hpp_source.html">library/matrix.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="matrix__pins__rgb_8hpp_source.html">library/matrix_pins_rgb.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="enums_8hpp_source.html">enums.hpp</a>&quot;</code><br />
+<code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="tetris__object__drawable_8hpp_source.html">tetris_object_drawable.hpp</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
@@ -78,13 +79,10 @@ Include dependency graph for main.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:adb06c112078ddc81972b775a85006d36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adb06c112078ddc81972b775a85006d36">movementObject</a> (<a class="el" href="classtetrisObjectDrawable.html">tetrisObjectDrawable</a> &amp;object, float &amp;verticalDelay, float &amp;horizontalDelay)</td></tr>
+<tr class="separator:adb06c112078ddc81972b775a85006d36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:adbff57cd5ecf7a4c0e5388f178e425ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classtetris__object__drawable.html">tetris_object_drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#adbff57cd5ecf7a4c0e5388f178e425ba">allTetrisObjects</a> [100]</td></tr>
-<tr class="separator:adbff57cd5ecf7a4c0e5388f178e425ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
@@ -104,15 +102,34 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="adbff57cd5ecf7a4c0e5388f178e425ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbff57cd5ecf7a4c0e5388f178e425ba">&#9670;&nbsp;</a></span>allTetrisObjects</h2>
+<a id="adb06c112078ddc81972b775a85006d36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb06c112078ddc81972b775a85006d36">&#9670;&nbsp;</a></span>movementObject()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classtetris__object__drawable.html">tetris_object_drawable</a>* allTetrisObjects[100]</td>
+          <td class="memname">void movementObject </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classtetrisObjectDrawable.html">tetrisObjectDrawable</a> &amp;&#160;</td>
+          <td class="paramname"><em>object</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>verticalDelay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float &amp;&#160;</td>
+          <td class="paramname"><em>horizontalDelay</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

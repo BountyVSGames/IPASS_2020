@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
   0: "_abcdefglmnoprstuw",
-  1: "gmtu",
-  2: "begmtu",
+  1: "gmt",
+  2: "begmt",
   3: "_cdefglmnostuw",
-  4: "abcdgloprtu",
+  4: "abcdgloprt",
   5: "t",
   6: "blp"
 };

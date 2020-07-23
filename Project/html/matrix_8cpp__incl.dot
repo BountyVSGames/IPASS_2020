@@ -8,18 +8,15 @@ digraph "library/matrix.cpp"
   Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="graphics_drawer.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$graphics__drawer_8hpp.html",tooltip="Inherits hwlib::window. "];
   Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node3 [label="updating_drawable.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$updating__drawable_8hpp.html",tooltip="Inherits hwlib::drawable. Adds update function. "];
-  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node4 [label="hwlib.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
-  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 [label="matrix_part.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__part_8hpp.html",tooltip="Writes pixel data to the matrix. "];
-  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node6 [label="matrix_pins_rgb.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__pins__rgb_8hpp.html",tooltip="Inherits hwlib::port_out. Manages the rgb pins. "];
-  Node6 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node5 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
-  Node7 [label="matrix_port.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__port_8hpp.html",tooltip="Contains all of the ports from the arduino that connect to the rgb matrix. "];
-  Node7 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="hwlib.hpp",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
   Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="matrix_part.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__part_8hpp.html",tooltip="Writes pixel data to the matrix. "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="matrix_pins_rgb.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__pins__rgb_8hpp.html",tooltip="Inherits hwlib::port_out. Manages the rgb pins. "];
+  Node5 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="matrix_port.hpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$matrix__port_8hpp.html",tooltip="Contains all of the ports from the arduino that connect to the rgb matrix. "];
+  Node6 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
 }

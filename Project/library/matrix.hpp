@@ -31,7 +31,7 @@ class matrix : public graphics_drawer
             : graphics_drawer(hwlib::xy(32, 16), fg, bg), port(port), top(port.rgb0), bottom(port.rgb1)
             {}
         
-        void show_frame();
+        void showFrame();
         void loop();
         
         virtual void flush(){};

@@ -12,7 +12,7 @@
 SOURCES := matrix.cpp graphics_drawer.cpp tetris_object_drawable.cpp
 
 # header files in this project
-HEADERS := matrix.hpp graphics_drawer.hpp matrix_part.hpp matrix_port.hpp matrix_pins_rgb.hpp updating_drawable.hpp tetris_object_drawable.hpp
+HEADERS := enums.hpp matrix.hpp graphics_drawer.hpp matrix_part.hpp matrix_port.hpp matrix_pins_rgb.hpp tetris_object_drawable.hpp
 
 # other places to look for files for this project
 SEARCH  := library

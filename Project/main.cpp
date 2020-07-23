@@ -7,10 +7,42 @@
 
 #include "library/matrix.hpp"
 #include "library/matrix_pins_rgb.hpp"
+#include "enums.hpp"
+
+#include <vector>
 
 #include "tetris_object_drawable.hpp"
 
-//tetris_object_drawable* allTetrisObjects[100];
+void movementObject(tetrisObjectDrawable& object, float& verticalDelay, float& horizontalDelay)
+{
+	auto buttonLeft = hwlib::target::pin_in(hwlib::target::pins::d52);
+	auto buttonRight = hwlib::target::pin_in(hwlib::target::pins::d53);
+
+	buttonLeft.refresh();
+	buttonRight.refresh();
+
+	if((buttonLeft.read() == 1 || buttonRight.read() == 1) && horizontalDelay <= 0)
+	{
+		object.moveX(buttonLeft.read() ? 1 : -1);
+
+		horizontalDelay = 50;
+	}
+	else
+	{
+		horizontalDelay--;
+	}
+
+	if(verticalDelay <= 0)
+	{
+		object.update();
+
+		verticalDelay = 100;
+	}
+	else
+	{
+		verticalDelay--;
+	}	
+}
 
 int main()
 {
@@ -40,28 +72,22 @@ int main()
     auto my_rgb_port = matrix_port(rgb0, rgb1, my_address_port, clock, latch, output_enabled);
 	auto my_window = matrix(my_rgb_port);
 
-	auto block1 = tetris_object_drawable(tetrisTypes.box, hwlib::xy(5, 4));
-	auto block2 = tetris_object_drawable(tetrisTypes.line, hwlib::xy(5, 8));
-	auto block3 = tetris_object_drawable(tetrisTypes.piramide, hwlib::xy(5, 12));
-
 	float verticalDelay = 100;
+	float horizontalDelay = 0;
+
+	tetrisTypes test1 = static_cast<tetrisTypes>(0);
+	//tetrisTypes test2 = static_cast<tetrisTypes>(1);
+	//tetrisTypes test3 = static_cast<tetrisTypes>(2);
+	hwlib::xy position1(0,7);
+
+	tetrisObjectDrawable object1 = tetrisObjectDrawable(test1, position1);
+
+	my_window << object1;
 
     for (;;)
     {	
-		if(verticalDelay <= 0)
-		{
-			block1.offset.x--;
-			block2.offset.x--;
-			block3.offset.x--;
-
-			verticalDelay = 100;
-		}
-		else
-		{
-			verticalDelay--;
-		}
+		movementObject(object1, verticalDelay, horizontalDelay);
 		
-
-		my_window.show_frame();
+		my_window.showFrame();
     }
 }

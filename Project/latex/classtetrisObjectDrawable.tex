@@ -1,0 +1,110 @@
+\hypertarget{classtetrisObjectDrawable}{}\section{tetris\+Object\+Drawable Class Reference}
+\label{classtetrisObjectDrawable}\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+
+
+{\ttfamily \#include $<$tetris\+\_\+object\+\_\+drawable.\+hpp$>$}
+
+
+
+Inheritance diagram for tetris\+Object\+Drawable\+:
+% FIG 0
+
+
+Collaboration diagram for tetris\+Object\+Drawable\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classtetrisObjectDrawable_a88661f3ddd7ec7330c4867f545f54780}{tetris\+Object\+Drawable} (\hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}{tetris\+Types} \hyperlink{classtetrisObjectDrawable_a0166b001667649c81bc968b4094ee557}{type}=static\+\_\+cast$<$ \hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}{tetris\+Types} $>$(0), hwlib\+::xy \hyperlink{classtetrisObjectDrawable_a53668abad09e9ec1cfca2b455cbe44f1}{pos}=hwlib\+::xy(7, 0))
+\item 
+void \hyperlink{classtetrisObjectDrawable_a8a8d34133c0b548220e956f1a2a7ebb0}{draw} (hwlib\+::window \&w)
+\item 
+void \hyperlink{classtetrisObjectDrawable_a3c8d207623221bd17246d51c13dc3eb4}{update} ()
+\item 
+void \hyperlink{classtetrisObjectDrawable_aea57aae17625b6be7efee46b85d41b9f}{moveX} (int posX)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classtetrisObjectDrawable_ae9668f6c46bcffbe62897387cd8a7989}{draw\+\_\+implementation} (hwlib\+::window \&w, hwlib\+::xy \hyperlink{classtetrisObjectDrawable_a53668abad09e9ec1cfca2b455cbe44f1}{pos}, hwlib\+::color \hyperlink{classtetrisObjectDrawable_a1093d07485e1cae9c91bd52cb423ccd1}{color})
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classtetrisObjectDrawable_a0514772753a8926f5dcbf3d5384d486a}{active}
+\item 
+\hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}{tetris\+Types} \hyperlink{classtetrisObjectDrawable_a0166b001667649c81bc968b4094ee557}{type}
+\item 
+hwlib\+::xy \hyperlink{classtetrisObjectDrawable_a53668abad09e9ec1cfca2b455cbe44f1}{pos}
+\item 
+hwlib\+::color \hyperlink{classtetrisObjectDrawable_a1093d07485e1cae9c91bd52cb423ccd1}{color}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtetrisObjectDrawable_a88661f3ddd7ec7330c4867f545f54780}\label{classtetrisObjectDrawable_a88661f3ddd7ec7330c4867f545f54780}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{tetris\+Object\+Drawable()}{tetrisObjectDrawable()}}
+{\footnotesize\ttfamily tetris\+Object\+Drawable\+::tetris\+Object\+Drawable (\begin{DoxyParamCaption}\item[{\hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}{tetris\+Types}}]{type = {\ttfamily static\+\_\+cast$<$\hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}{tetris\+Types}$>$(0)},  }\item[{hwlib\+::xy}]{pos = {\ttfamily hwlib\+:\+:xy(7,0)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtetrisObjectDrawable_a8a8d34133c0b548220e956f1a2a7ebb0}\label{classtetrisObjectDrawable_a8a8d34133c0b548220e956f1a2a7ebb0}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!draw@{draw}}
+\index{draw@{draw}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void tetris\+Object\+Drawable\+::draw (\begin{DoxyParamCaption}\item[{hwlib\+::window \&}]{w }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtetrisObjectDrawable_ae9668f6c46bcffbe62897387cd8a7989}\label{classtetrisObjectDrawable_ae9668f6c46bcffbe62897387cd8a7989}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!draw\+\_\+implementation@{draw\+\_\+implementation}}
+\index{draw\+\_\+implementation@{draw\+\_\+implementation}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{draw\+\_\+implementation()}{draw\_implementation()}}
+{\footnotesize\ttfamily void tetris\+Object\+Drawable\+::draw\+\_\+implementation (\begin{DoxyParamCaption}\item[{hwlib\+::window \&}]{w,  }\item[{hwlib\+::xy}]{pos,  }\item[{hwlib\+::color}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classtetrisObjectDrawable_aea57aae17625b6be7efee46b85d41b9f}\label{classtetrisObjectDrawable_aea57aae17625b6be7efee46b85d41b9f}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!moveX@{moveX}}
+\index{moveX@{moveX}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{move\+X()}{moveX()}}
+{\footnotesize\ttfamily void tetris\+Object\+Drawable\+::moveX (\begin{DoxyParamCaption}\item[{int}]{posX }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtetrisObjectDrawable_a3c8d207623221bd17246d51c13dc3eb4}\label{classtetrisObjectDrawable_a3c8d207623221bd17246d51c13dc3eb4}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!update@{update}}
+\index{update@{update}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void tetris\+Object\+Drawable\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classtetrisObjectDrawable_a0514772753a8926f5dcbf3d5384d486a}\label{classtetrisObjectDrawable_a0514772753a8926f5dcbf3d5384d486a}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!active@{active}}
+\index{active@{active}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool tetris\+Object\+Drawable\+::active\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classtetrisObjectDrawable_a1093d07485e1cae9c91bd52cb423ccd1}\label{classtetrisObjectDrawable_a1093d07485e1cae9c91bd52cb423ccd1}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!color@{color}}
+\index{color@{color}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily hwlib\+::color tetris\+Object\+Drawable\+::color\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classtetrisObjectDrawable_a53668abad09e9ec1cfca2b455cbe44f1}\label{classtetrisObjectDrawable_a53668abad09e9ec1cfca2b455cbe44f1}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!pos@{pos}}
+\index{pos@{pos}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily hwlib\+::xy tetris\+Object\+Drawable\+::pos\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classtetrisObjectDrawable_a0166b001667649c81bc968b4094ee557}\label{classtetrisObjectDrawable_a0166b001667649c81bc968b4094ee557}} 
+\index{tetris\+Object\+Drawable@{tetris\+Object\+Drawable}!type@{type}}
+\index{type@{type}!tetris\+Object\+Drawable@{tetris\+Object\+Drawable}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \hyperlink{enums_8hpp_aa2b983d3f5fee7f17796e5ef5040d787}{tetris\+Types} tetris\+Object\+Drawable\+::type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tetris__object__drawable_8hpp}{tetris\+\_\+object\+\_\+drawable.\+hpp}\item 
+\hyperlink{tetris__object__drawable_8cpp}{tetris\+\_\+object\+\_\+drawable.\+cpp}\end{DoxyCompactItemize}

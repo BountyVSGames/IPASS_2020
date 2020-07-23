@@ -17,10 +17,12 @@ void matrix::write_implementation(hwlib::xy l, hwlib::color c)
     }
 }
 
-void matrix::show_frame()
+/**
+* @brief Clears screen from last frame, and draws current frame. Send the variables to the matrix
+*/
+void matrix::showFrame()
 {
     clear();
-    update_all();
     draw_all();
 
     for (uint_fast8_t c = 0; c < 4; c++)
@@ -58,7 +60,7 @@ void matrix::loop()
 {
     for(;;)
     {
-        show_frame();
+        showFrame();
     }
 }
 

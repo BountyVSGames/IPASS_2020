@@ -86,8 +86,9 @@ Collaboration diagram for matrix:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5b188e2d48833305f8a1b6db34e40521"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix.html#a5b188e2d48833305f8a1b6db34e40521">matrix</a> (<a class="el" href="classmatrix__port.html">matrix_port</a> &amp;<a class="el" href="classmatrix.html#a41ef5702ec1ac3c3e23d6fe12ad58c57">port</a>, hwlib::color fg=hwlib::white, hwlib::color bg=hwlib::black)</td></tr>
 <tr class="separator:a5b188e2d48833305f8a1b6db34e40521"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d1d88257855bff38c7359e183e26e43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix.html#a2d1d88257855bff38c7359e183e26e43">show_frame</a> ()</td></tr>
-<tr class="separator:a2d1d88257855bff38c7359e183e26e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78bca859b321539d1749b0d3ef8c11c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix.html#a78bca859b321539d1749b0d3ef8c11c5">showFrame</a> ()</td></tr>
+<tr class="memdesc:a78bca859b321539d1749b0d3ef8c11c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears screen from last frame, and draws current frame. Send the variables to the matrix.  <a href="#a78bca859b321539d1749b0d3ef8c11c5">More...</a><br /></td></tr>
+<tr class="separator:a78bca859b321539d1749b0d3ef8c11c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d2edd1ca96668aed4dfa402fb558d8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix.html#a6d2edd1ca96668aed4dfa402fb558d8c">loop</a> ()</td></tr>
 <tr class="separator:a6d2edd1ca96668aed4dfa402fb558d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a867830c5b26171d0b031aadeb8ad1eee"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmatrix.html#a867830c5b26171d0b031aadeb8ad1eee">flush</a> ()</td></tr>
@@ -104,8 +105,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac85a6dc3e0ef97fc793f91862e794c47 inherit pub_methods_classgraphics__drawer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44a2871ef32f5b9acccd7bac7d1137dd inherit pub_methods_classgraphics__drawer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphics__drawer.html">graphics_drawer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#a44a2871ef32f5b9acccd7bac7d1137dd">operator&lt;&lt;</a> (hwlib::drawable &amp;drawing)</td></tr>
 <tr class="separator:a44a2871ef32f5b9acccd7bac7d1137dd inherit pub_methods_classgraphics__drawer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a034d8e5bff49f5f18d17eb4d581712f2 inherit pub_methods_classgraphics__drawer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgraphics__drawer.html">graphics_drawer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#a034d8e5bff49f5f18d17eb4d581712f2">operator&lt;&lt;</a> (<a class="el" href="classupdating__drawable.html">updating_drawable</a> &amp;drawing)</td></tr>
-<tr class="separator:a034d8e5bff49f5f18d17eb4d581712f2 inherit pub_methods_classgraphics__drawer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -128,10 +127,6 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a432b568a14d6ce8b746dcce5901714dd inherit pro_attribs_classgraphics__drawer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6341a415f308d7d276d6c36336f2888 inherit pro_attribs_classgraphics__drawer"><td class="memItemLeft" align="right" valign="top">hwlib::drawable *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#ae6341a415f308d7d276d6c36336f2888">drawings</a> [128]</td></tr>
 <tr class="separator:ae6341a415f308d7d276d6c36336f2888 inherit pro_attribs_classgraphics__drawer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bdb91885928251f6c0d0c94593e2200 inherit pro_attribs_classgraphics__drawer"><td class="memItemLeft" align="right" valign="top">uint_fast16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#a2bdb91885928251f6c0d0c94593e2200">updating_drawings_c</a> = 0</td></tr>
-<tr class="separator:a2bdb91885928251f6c0d0c94593e2200 inherit pro_attribs_classgraphics__drawer"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a596f6deb608444d694f8c97bf949d7e0 inherit pro_attribs_classgraphics__drawer"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classupdating__drawable.html">updating_drawable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraphics__drawer.html#a596f6deb608444d694f8c97bf949d7e0">updating_drawings</a> [128]</td></tr>
-<tr class="separator:a596f6deb608444d694f8c97bf949d7e0 inherit pro_attribs_classgraphics__drawer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Boudewijn Witteveen </dd></dl>
@@ -247,20 +242,22 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a2d1d88257855bff38c7359e183e26e43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d1d88257855bff38c7359e183e26e43">&#9670;&nbsp;</a></span>show_frame()</h2>
+<a id="a78bca859b321539d1749b0d3ef8c11c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78bca859b321539d1749b0d3ef8c11c5">&#9670;&nbsp;</a></span>showFrame()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void matrix::show_frame </td>
+          <td class="memname">void matrix::showFrame </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clears screen from last frame, and draws current frame. Send the variables to the matrix. </p>
 
 </div>
 </div>
